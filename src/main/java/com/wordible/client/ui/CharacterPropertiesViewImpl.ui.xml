@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:bdp="urn:import:com.github.gwtbootstrap.datepicker.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+			<b:ControlLabel>Label name</b:ControlLabel>
+			<b:TextBox placeholder="Type something…" />
+			<b:HelpBlock>Example block-level help text here.</b:HelpBlock>
+			<b:CheckBox> Check me out</b:CheckBox>
+			<bdp:DateBox format="dd/mm/yyyy" autoClose="true" />
+			<b:SubmitButton addStyleNames="btn" ui:field="submit">Submit</b:SubmitButton>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,66 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:w="urn:import:com.wordible.client.ui"
+    xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+    <ui:style>
+        .important {
+            font-weight: bold;
+        }
+    </ui:style>
+    <g:DockLayoutPanel unit="EM">
+        <g:north size="5">
+            <b:Navbar>
+                <b:Brand>Wordible</b:Brand>
+                <b:Nav>
+                    <b:NavLink>Test</b:NavLink>
+                    <b:NavLink href="http://www.google.com">Another Test</b:NavLink>
+                </b:Nav>
+                <b:NavForm size="1" />
+                <b:Nav alignment="RIGHT">
+                    <b:NavLink>Test</b:NavLink>
+                </b:Nav>
+                <b:NavText alignment="RIGHT">Right</b:NavText>
+                <b:NavSearch size="2" placeholder="Search" alignment="RIGHT" />
+            </b:Navbar>
+        </g:north>
+        <g:west size="20">
+
+            <g:TabLayoutPanel barHeight="22" ui:field="tabPanel">
+                <g:tab>
+                    <g:header size='7'>
+                        <b>Chracters</b>
+                    </g:header>
+                    <g:SplitLayoutPanel>
+                        <g:north size="200">
+                            <g:ScrollPanel>
+                                <w:CellTreeExample2></w:CellTreeExample2>
+                            </g:ScrollPanel>
+                        </g:north>
+                        <g:center>
+                            <w:CharacterPropertiesViewImpl height="222" width="22"></w:CharacterPropertiesViewImpl>
+                        </g:center>
+                    </g:SplitLayoutPanel>
+                </g:tab>
+                <g:tab>
+                    <g:header size='7'>
+                        <b>Scenes</b>
+                    </g:header>
+                    <g:SplitLayoutPanel>
+                        <g:north size="22">
+                            <g:ScrollPanel>
+                                <w:CellTreeExample2></w:CellTreeExample2>
+                            </g:ScrollPanel>
+                        </g:north>
+                        <g:center>
+                            <w:CharacterPropertiesViewImpl height="222" width="22"></w:CharacterPropertiesViewImpl>
+                        </g:center>
+                    </g:SplitLayoutPanel>
+                </g:tab>
+            </g:TabLayoutPanel>
+
+        </g:west>
+        <g:center>
+            <g:Label>CAT...</g:Label>
+        </g:center>
+    </g:DockLayoutPanel>
+</ui:UiBinder> 
